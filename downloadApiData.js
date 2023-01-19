@@ -1,4 +1,4 @@
-class ExchangeInfo {
+class apiCollection {
     constructor(api) {
         this.api = api;
     }
@@ -11,14 +11,14 @@ class ExchangeInfo {
     }
 }
 
-const exchangeInfo = new ExchangeInfo("https://fapi.binance.com/fapi/v1/exchangeInfo");
-const exchangeInfo1 = new ExchangeInfo("https://fapi.binance.com/fapi/v1/exchangeInfo");
-const exchangeInfo2 = new ExchangeInfo("https://fapi.binan");
+const apiExchangeInfo = new apiCollection("https://fapi.binance.com/fapi/v1/exchangeInfo");
+const apiKline = new apiCollection("https://fapi.binance.com/fapi/v1/exchangeInfo");
+const apiInterestRate = new apiCollection("https://fapi.binan");
 
-exchangeInfo.getJson();
-
-
-exchangeInfo1.getJson();
+apiExchangeInfo.getJson();
 
 
-exchangeInfo2.getJson();
+// apiKline.getJson();
+
+
+// apiInterestRate.getJson();
