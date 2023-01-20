@@ -2,12 +2,15 @@ class apiCollection {
     constructor(api) {
         this.api = api;
     }
-
+// Pure Get Json and parsed function
     async getJson() {
         let exInfo = await fetch(this.api);
         exInfo = await exInfo.json();
-        // console.log(exInfo);
-        // return exInfo;
+        console.log(exInfo);
+        return exInfo;
+    }
+
+    async saveKlinedata() {
         let finalData = exInfo.map(d => {
             return {time:d[0]/1000,open:parseFloat(d[1]),high:parseFloat(d[2]),low:parseFloat(d[3]),close:parseFloat(d[4])}
           });
@@ -19,10 +22,4 @@ const apiExchangeInfo = new apiCollection("https://fapi.binance.com/fapi/v1/exch
 const apiKline = new apiCollection("https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&limit=1000");
 const apiInterestRate = new apiCollection("https://fapi.binan");
 
-// apiExchangeInfo.getJson();
-
-
-apiKline.getJson();
-
-
-// apiInterestRate.getJson();
+apiKline.getJson().saveKlinedata();
