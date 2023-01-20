@@ -8,7 +8,7 @@
             "interval": "MINUTE",
             "intervalNum": 1,
             "limit": 2400
-        },
+        }
     ],
     "exchangeFilters": [],
     "symbols": [
@@ -31,7 +31,7 @@
             "underlyingType": "COIN",
             "underlyingSubType": [
                 "PoW"
-            ],
+            ]
         },{
             "symbol": "XMTUSDT",
             "pair": "XMTUSDT",
@@ -51,7 +51,7 @@
             "underlyingType": "COIN",
             "underlyingSubType": [
                 "PoW"
-            ],
+            ]
         },{
             "symbol": "SOLUSDT",
             "pair": "SOLUSDT",
@@ -71,7 +71,7 @@
             "underlyingType": "COIN",
             "underlyingSubType": [
                 "PoW"
-            ],
+            ]
         },{
             "symbol": "ETHUSDT",
             "pair": "ETHUSDT",
@@ -91,7 +91,7 @@
             "underlyingType": "COIN",
             "underlyingSubType": [
                 "PoW"
-            ],
-        },
-    ],
+            ]
+        }
+    ]
 }
